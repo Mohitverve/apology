@@ -1,0 +1,102 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffe6e6; /* Light pink background */
+    color: #333;
+    margin: 0;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.sorry-message {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+    font-style: italic;
+}
+
+.sorry-message::first-line {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e44d26; /* Romantic red color */
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e44d26; /* Romantic red color */
+}
+
+/* Decorative elements */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Heart shape for extra romantic touch */
+.heart {
+    color: #e44d26;
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.sorry-message {
+    font-size: 24px;
+    color: #333;
+}
+
+.question-container {
+    margin-top: 20px;
+}
+
+.question {
+    font-size: 18px;
+    color: #555;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}

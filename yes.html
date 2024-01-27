@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yes.css">
+    <script defer src="script.js"></script>
+    <title>Apology</title>
+</head>
+<body>
+
+
+    <div class="main-content">
+        <audio controls>
+            <source src="Snowman-(LoFi)(PagalWorldl).mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+        <p class="sorry-message">
+            I love you khushi and Here is the song which i want to dedicate 
+           Don't cry, snowman, not in front of me
+Who'll catch your tears if you can't catch me, darling?
+If you can't catch me, darling
+Don't cry, snowman, don't leave me this way
+A puddle of water can't hold me close, baby
+Can't hold me close, baby
+I want you to know that I'm never leaving
+'Cause I'm Mrs. Snow, 'til death we'll be freezing
+Yeah, you are my home, my home for all seasons
+So come on, let's go
+Let's go below zero and hide from the sun
+I love you forever where we'll have some fun
+Yes, let's hit the North Pole and live happily
+Please, don't cry no tears now, it's Christmas, baby
+My snowman and me
+My snowman and me
+Baby
+Don't cry, snowman, don't you fear the sun
+Who'll carry me without legs to run, honey?
+Without legs to run, honey
+Don't cry, snowman, don't you shed a tear
+Who'll hear my secrets if you don't have ears, baby?
+If you don't have ears, baby
+I want you to know that I'm never leaving
+'Cause I'm Mrs. Snow, 'til death we'll be freezing
+Yeah, you are my home, my home for all seasons
+So come on, let's go
+Let's go below zero and hide from the sun
+I love you forever where we'll have some fun
+Yes, let's hit the North Pole and live happily
+Please, don't cry no tears now, it's Christmas, baby
+My snowman and me
+My snowman and me
+Baby </p>
+
+<!-- ... Your existing HTML code ... -->
+
+<div class="question-container">
+    <p class="question">Will you forgive me?</p>
+    <button onclick="redirectToPage('yes')">Yes</button>
+    <button onclick="redirectToPage('no')">No</button>
+</div>
+</div>
+
+<div class="snowflakes"></div>
+
+<script>
+function createSnowflake() {
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    const size = Math.random() * 10 + 5;
+    snowflake.style.width = size + 'px';
+    snowflake.style.height = size + 'px';
+    snowflake.style.left = Math.random() * 100 + 'vw';
+    snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+
+    document.querySelector('.snowflakes').appendChild(snowflake);
+}
+
+// Create a certain number of snowflakes
+const numberOfSnowflakes = 20;
+for (let i = 0; i < numberOfSnowflakes; i++) {
+    createSnowflake();
+}
+</script>
+
+</body>
+</html>
+
+   
+<script src="yes.js"></script>
+</body>
+</html>
